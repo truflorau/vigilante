@@ -35,7 +35,7 @@ TESTNET_PATH="path_where_the_testnet_files_will_be_stored" # example: $HOME/Proj
 
 ### Babylon configuration
 
-Initially, create a testnet files for Babylon.
+Initially, create testnet files for Babylon.
 In this snippet, we create only one node, but this can work
 for an arbitrary number of nodes.
 
@@ -81,7 +81,7 @@ gencerts -d $TESTNET_PATH/bitcoin/ -H host.docker.internal
 #### Running a Bitcoin simnet with an arbitrary mining address
 
 Launch a simnet Bitcoin node
-which listens for RPC connections at port `18556` and
+that listens for RPC connections at port `18556` and
 stores the RPC certificate under the `$TESTNET_PATH/bitcoin` directory.
 The mining address is arbitrary.
 
@@ -169,7 +169,7 @@ built on top of the block in which the reward was given.
 
 ### Vigilante configuration
 
-Create a directory which will store the vigilante configuration,
+Create a directory that will store the vigilante configuration,
 copy the sample vigilante configuration into a `vigilante.yml` file, and
 adapt it to the specific requirements.
 
@@ -209,7 +209,7 @@ go run $VIGILANTE_PATH/cmd/main.go submitter \
 
 #### Running the vigilante monitor
 
-We first need to ensure that a BTC full node and the Babylon node that we want to monitor are started running.
+We first need to ensure that a BTC full node and the Babylon node that we want to monitor are running.
 
 Then we start the vigilante monitor:
 
@@ -221,7 +221,7 @@ go run $VIGILANTE_PATH/cmd/main.go monitor \
 
 #### Running the BTC staking tracker
 
-We first need to ensure that a BTC full node and the Babylon node that we want to monitor are started running.
+We first need to ensure that a BTC full node and the Babylon node that we want to monitor are running.
 
 Then we start the BTC staking tracker:
 
@@ -232,7 +232,7 @@ go run $VIGILANTE_PATH/cmd/main.go bstracker \
 
 ### Running the vigilante using Docker
 
-#### Running the vigilante reporter in Docker container
+#### Running the vigilante reporter in the Docker container
 
 Initially, build a Docker image named `babylonchain/vigilante-reporter`
 
@@ -252,7 +252,7 @@ docker run --rm \
          babylonchain/vigilante-reporter
 ```
 
-#### Running the vigilante submitter in Docker container
+#### Running the vigilante submitter in the Docker container
 
 Follow the same steps as above, but with the `babylonchain/vigilante-submitter` Docker image.
 
@@ -264,7 +264,7 @@ docker run --rm \
          babylonchain/vigilante-submitter
 ```
 
-#### Running the vigilante monitor in Docker container
+#### Running the vigilante monitor in the Docker container
 
 Follow the same steps as above, but with the `babylonchain/vigilante-monitor` Docker image.
 
@@ -276,7 +276,7 @@ docker run --rm \
          babylonchain/vigilante-monitor
 ```
 
-#### Running the BTC staking tracker in Docker container
+#### Running the BTC staking tracker in the Docker container
 
 Follow the same steps as above, but with the `babylonchain/btc-staking-tracker` Docker image.
 
