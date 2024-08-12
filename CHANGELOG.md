@@ -22,7 +22,7 @@
 - feat: Add BTC related metrics [\#182](https://github.com/babylonchain/vigilante/pull/182) ([gitferry](https://github.com/gitferry))
 - fix: Submitter/Fix bumping fee [\#181](https://github.com/babylonchain/vigilante/pull/181) ([gitferry](https://github.com/gitferry))
 - chore: Remove duplicate log and change log types [\#179](https://github.com/babylonchain/vigilante/pull/179) ([vitsalis](https://github.com/vitsalis))
-- Use Replace-by-Fee if the previous sent checkpoint has not been included for long time [\#176](https://github.com/babylonchain/vigilante/pull/176) ([gitferry](https://github.com/gitferry))
+- Use Replace-by-Fee if the previously sent checkpoint has not been included for a long time [\#176](https://github.com/babylonchain/vigilante/pull/176) ([gitferry](https://github.com/gitferry))
 - Babylon v0.7.1 [\#173](https://github.com/babylonchain/vigilante/pull/173) ([vitsalis](https://github.com/vitsalis))
 - e2e tests [\#171](https://github.com/babylonchain/vigilante/pull/171) ([KonradStaniec](https://github.com/KonradStaniec))
 - feat: Enable Replace By Fee [\#170](https://github.com/babylonchain/vigilante/pull/170) ([vitsalis](https://github.com/vitsalis))
@@ -141,7 +141,7 @@
 
 **Closed issues:**
 
-- Submitter: error while submitting checkpoint to BTC if address is segwit [\#111](https://github.com/babylonchain/vigilante/issues/111)
+- Submitter: error while submitting checkpoint to BTC if the address is segwit [\#111](https://github.com/babylonchain/vigilante/issues/111)
 
 **Merged pull requests:**
 
@@ -214,7 +214,7 @@
 
 - submitter: Only the earliest epoch sealed checkpoint is accepted if included in the same BTC block [\#76](https://github.com/babylonchain/vigilante/issues/76)
 - reporter: bootstrapping: Submit multiple headers at once [\#60](https://github.com/babylonchain/vigilante/issues/60)
-- Reporter: Investigate cause behind "account sequence mismatch error" [\#46](https://github.com/babylonchain/vigilante/issues/46)
+- Reporter: Investigate the cause behind "account sequence mismatch error" [\#46](https://github.com/babylonchain/vigilante/issues/46)
 
 **Merged pull requests:**
 
@@ -233,7 +233,7 @@
 - fix: Trim cache based on a valid slice [\#81](https://github.com/babylonchain/vigilante/pull/81) ([vitsalis](https://github.com/vitsalis))
 - chore: fix mock file directory in Makefile [\#80](https://github.com/babylonchain/vigilante/pull/80) ([SebastianElvis](https://github.com/SebastianElvis))
 - Move retry module from Vigilante to BBN [\#79](https://github.com/babylonchain/vigilante/pull/79) ([gusin13](https://github.com/gusin13))
-- Move retry config out of reporter so its accessible by other clients [\#78](https://github.com/babylonchain/vigilante/pull/78) ([gusin13](https://github.com/gusin13))
+- Move retry config out of reporter so it is accessible by other clients [\#78](https://github.com/babylonchain/vigilante/pull/78) ([gusin13](https://github.com/gusin13))
 - feat: Submitter/chaining utxo [\#75](https://github.com/babylonchain/vigilante/pull/75) ([gitferry](https://github.com/gitferry))
 - Allow the usage of indexed mainnet tags [\#74](https://github.com/babylonchain/vigilante/pull/74) ([vitsalis](https://github.com/vitsalis))
 - reporter: improving resilience [\#69](https://github.com/babylonchain/vigilante/pull/69) ([SebastianElvis](https://github.com/SebastianElvis))
@@ -272,7 +272,7 @@
 - docker: Docker image for submitter and reporter. Updated instructions [\#14](https://github.com/babylonchain/vigilante/pull/14) ([vitsalis](https://github.com/vitsalis))
 - submitter: separate constructor functions for BTC client [\#13](https://github.com/babylonchain/vigilante/pull/13) ([SebastianElvis](https://github.com/SebastianElvis))
 - submitter: query ckpt APIs and poller [\#12](https://github.com/babylonchain/vigilante/pull/12) ([SebastianElvis](https://github.com/SebastianElvis))
-- bootstrapping: moving the initialisation of BTC cache to reporter [\#11](https://github.com/babylonchain/vigilante/pull/11) ([SebastianElvis](https://github.com/SebastianElvis))
+- bootstrapping: moving the initialization of BTC cache to the reporter [\#11](https://github.com/babylonchain/vigilante/pull/11) ([SebastianElvis](https://github.com/SebastianElvis))
 - doc: documentations on the private dependency issue [\#10](https://github.com/babylonchain/vigilante/pull/10) ([SebastianElvis](https://github.com/SebastianElvis))
 - Bootstrapping - Sync latest BTC blocks and store in memory  [\#9](https://github.com/babylonchain/vigilante/pull/9) ([gusin13](https://github.com/gusin13))
 - babylonclient: extract and forward checkpoints [\#8](https://github.com/babylonchain/vigilante/pull/8) ([SebastianElvis](https://github.com/SebastianElvis))
